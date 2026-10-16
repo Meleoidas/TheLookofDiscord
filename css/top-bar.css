@@ -1,0 +1,118 @@
+.top-bar{
+  justify-content: space-between;
+  position: fixed;
+  width: calc(100% - 327px);
+  height: 32px;
+  padding: 8px;
+
+  top: 0;
+  left: 311px;
+  border-bottom: 1px rgb(41, 42, 47) solid;
+  box-shadow: 0 2px rgba(41, 42, 47, 0.25);
+}
+
+.top-right{
+  color: rgb(181.02,185.99,192.98);
+}
+
+.top-right > *{
+  position: relative;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.top-right div{
+  cursor: pointer;
+}
+
+/* worst code in humanity, have some ideas won't bother anymore*/
+.top-bar .user-name > div, .top-right div > div{
+  top: 100%;
+}
+.top-bar .user-name > div{
+  left: -55%;
+}
+.top-right-voice > div{
+  left: -170%;
+}
+.top-right-video > div{
+  left: -185%;
+}
+.top-right-pin > div{
+  left: -200%;
+}
+.top-right-add-friends > div{
+  left: -215%;
+}
+.top-right-user-profile > div{
+  left: -190%;
+}
+.top-right-inbox > div{
+  left: -55%;
+}
+.top-right-help > div{
+  left: -45%;
+}
+.top-right-help .dm-rectangle{
+  transform: translateX(-10px);
+}
+
+.top-bar .user-name .dm-triangle, .top-right .dm-triangle {
+  transform: translateY(3px);
+  border-top: 0;
+  border-bottom: 8px solid rgb(22, 23, 26);
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+
+.top-bar .user-name:hover > div, .top-right div:hover > div{
+  transform: scale(1);
+  opacity: 1;
+}
+
+.top-right-search{
+  position: relative;
+  justify-content: space-between;
+  color: rgb(148.05,154.97,164.06);
+  background-color: rgb(29.87,30.87,33.88);
+  height: 24px;
+  clip-path: inset(0 round 5px);
+}
+
+.top-right-search input{
+  box-sizing: border-box;
+
+  color: rgb(148.05,154.97,164.06);
+  background-color: transparent;
+  height: 24px;
+  width: 144px;
+  border: none;
+  outline: none;
+  padding: 6px;
+  font-family: var(--font-family);
+  z-index: 1;
+
+  transition: 250ms width;
+}
+
+.top-right-search input:focus{
+  width: 240px;
+}
+
+.top-right-search input::placeholder{
+  color: rgb(148.05,154.97,164.06);
+  font-family: var(--font-family);
+  font-size: 14px;
+}
+
+.top-right-search svg{
+  position: absolute;
+  fill: rgb(148.05,154.97,164.06);
+  top: 50%;
+  right: 6px;
+  transform: translateY(-50%);
+}
+
+.top-bar-hover-effect:hover *:not(.help-question-mark){
+  fill: rgba(255,254.99,254.98, 0.8);
+}

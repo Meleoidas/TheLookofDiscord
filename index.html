@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/gg-sans">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/server1.css">
+  <link rel="stylesheet" href="css/server-bar.css">
+  <link rel="stylesheet" href="css/top-bar.css">
+  <link rel="stylesheet" href="css/channel-bar.css">
+  <link rel="stylesheet" href="css/text-bar.css">
+  <link rel="stylesheet" href="css/chat-bar.css">
+
+  <title>Rīper</title>
+</head>
+<body>
+
+<!--- Server Bar  --->
+
+  <div class="server-bar flex">
+    <div class="server-1 flex">
+      <div class="icon-box">
+       <button class="icon"></button>
+      </div>
+      <div class="server-hover"></div>
+      <div class="popup flex">
+        <div class="triangle"></div>
+        <div class="rectangle">Direct Messages</div>
+      </div>
+    </div>
+
+    <div class="divider">
+      <div class="server-bar-divider"></div>
+    </div>
+
+    <div class="server-2 flex">
+      <div class="icon-box">
+        <button class="icon"></button>
+      </div>
+      <div class="server-hover"></div>
+      <div class="popup flex">
+        <div class="triangle"></div>
+        <div class="rectangle">test</div>
+      </div>
+    </div>
+
+    <div class="discover-button flex">
+      <div class="icon-box flex">
+        <button class="icon flex">
+          <svg width="24" height="24"><path fill="rgb(219.01,221.97,224.96)" d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path><path fill="rgb(219.01,221.97,224.96)" fill-rule="evenodd" d="M23 12a11 11 0 1 1-22 0 11 11 0 0 1 22 0ZM7.74 9.3A2 2 0 0 1 9.3 7.75l7.22-1.45a1 1 0 0 1 1.18 1.18l-1.45 7.22a2 2 0 0 1-1.57 1.57l-7.22 1.45a1 1 0 0 1-1.18-1.18L7.74 9.3Z"></path></svg>
+        </button>
+      </div>
+      <div class="server-hover"></div>
+      <div class="popup flex">
+        <div class="triangle"></div>
+        <div class="rectangle">Discover</div>
+      </div>
+    </div>
+  </div>
+
+<!--- Channel Bar  --->
+
+  <div class="channel-bar flex">
+    <div class="channel-top-bar flex">
+      <input type="text" placeholder="Find or start a conversation">
+    </div>
+    <div class="friends hover-effect flex">
+      <svg width="24" height="24"><path fill="currentColor" d="M13 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"></path><path fill="currentColor" d="M3 5v-.75C3 3.56 3.56 3 4.25 3s1.24.56 1.33 1.25C6.12 8.65 9.46 12 13 12h1a8 8 0 0 1 8 8 2 2 0 0 1-2 2 .21.21 0 0 1-.2-.15 7.65 7.65 0 0 0-1.32-2.3c-.15-.2-.42-.06-.39.17l.25 2c.02.15-.1.28-.25.28H9a2 2 0 0 1-2-2v-2.22c0-1.57-.67-3.05-1.53-4.37A15.85 15.85 0 0 1 3 5Z"></path></svg>
+      <div>Friends</div>
+    </div>
+
+    <div class="nitro hover-effect flex">
+      <svg width="24" height="24"><path fill="currentColor" d="M15 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path><path fill="currentColor" fill-rule="evenodd" d="M7 4a1 1 0 0 0 0 2h3a1 1 0 1 1 0 2H5.5a1 1 0 0 0 0 2H8a1 1 0 1 1 0 2H6a1 1 0 1 0 0 2h1.25A8 8 0 1 0 15 4H7Zm8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" clip-rule="evenodd"></path><path fill="currentColor" d="M2.5 10a1 1 0 0 0 0-2H2a1 1 0 0 0 0 2h.5Z"></path></svg>
+      <div>Nitro</div>
+    </div>
+
+    <div class="shop hover-effect flex">
+      <svg width="24" height="24"><path fill="currentColor" d="M2.63 4.19A3 3 0 0 1 5.53 2H7a1 1 0 0 1 1 1v3.98a3.07 3.07 0 0 1-.3 1.35A2.97 2.97 0 0 1 4.98 10c-2 0-3.44-1.9-2.9-3.83l.55-1.98ZM10 2a1 1 0 0 0-1 1v4a3 3 0 0 0 3 3 3 3 0 0 0 3-2.97V3a1 1 0 0 0-1-1h-4ZM17 2a1 1 0 0 0-1 1v3.98a3.65 3.65 0 0 0 0 .05A2.95 2.95 0 0 0 19.02 10c2 0 3.44-1.9 2.9-3.83l-.55-1.98A3 3 0 0 0 18.47 2H17Z"></path><path fill="currentColor" d="M21 11.42V19a3 3 0 0 1-3 3h-2.75a.25.25 0 0 1-.25-.25V16a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v5.75c0 .14-.11.25-.25.25H6a3 3 0 0 1-3-3v-7.58c0-.18.2-.3.37-.24a4.46 4.46 0 0 0 4.94-1.1c.1-.12.3-.12.4 0a4.49 4.49 0 0 0 6.58 0c.1-.12.3-.12.4 0a4.45 4.45 0 0 0 4.94 1.1c.17-.07.37.06.37.24Z"></path></svg>
+      <div>Shop</div>
+    </div>
+
+    <div class="dm flex">
+      <div class="direct-messages">DIRECT MESSAGES</div>
+      <div class="create-dm flex">+
+        <div class="dm-popup flex">
+          <div class="dm-rectangle">Create DM</div>
+          <div class="dm-triangle"></div>
+        </div>
+      </div>
+    </div>
+    <div class="user-1 flex hover-effect">
+      <div class="user-pfp">
+        <div class="user-status flex">
+          <div class="user-status-1"></div>
+          <div class="user-status-2 dnd"></div>
+          <svg viewBox="0 0 10 10">
+            <rect x="2.6" y="4.2" width="4.65" height="1.5"/>
+          </svg>
+        </div>
+
+      </div>
+      <div class="user-name">
+        Rīper
+      </div>
+      <div class="user-clan-tag flex">
+        <img class="user-clan-tag-icon" src="media/user 1 clan tag icon.png">
+        <div class="user-clan-tag-text">
+          UWU
+        </div>
+      </div>
+      <div class="user-close-button">
+        &#10761;
+      </div>
+    </div>
+
+    <div class="anon flex">
+      <div class="anon-pfp-and-info flex">
+       <div class="anon-pfp">
+          <div class="user-status flex">
+           <div class="user-status-1"></div>
+           <div class="user-status-2 active"></div>
+         </div>
+        </div>
+
+       <div class="anon-info">
+         <div class="anon-name">Anon</div>
+         <div class="anon-status">Online</div>
+       </div>
+      </div>
+
+      <div class="mute-button flex">
+        <svg width="20" height="20" viewBox="0 0 24 24"><defs><clipPath><rect width="24" height="24" x="0" y="0"></rect></clipPath><clipPath><path d="M0,0 L600,0 L600,600 L0,600z"></path></clipPath><clipPath><path d="M0,0 L1000,0 L1000,1000 L0,1000z"></path></clipPath><clipPath><path d="M0,0 L1000,0 L1000,1000 L0,1000z"></path></clipPath><clipPath><path d="M0,0 L1000,0 L1000,1000 L0,1000z"></path></clipPath><mask><rect fill="#ffffff" width="600" height="600" transform="matrix(1,0,0,1,200,200)"></rect><path fill="#000000" clip-rule="nonzero" d=" M1025.219970703125,-87.2040023803711 C1025.219970703125,-87.2040023803711 853.697021484375,87.75 853.697021484375,87.75 C853.697021484375,87.75 789.760009765625,155.23199462890625 839.1370239257812,204.86199951171875 C893,259 957.6799926757812,191.05599975585938 957.6799926757812,191.05599975585938 C957.6799926757812,191.05599975585938 1129.2030029296875,16.101999282836914 1129.2030029296875,16.101999282836914 C1129.2030029296875,16.101999282836914 1212,-66 1160.2149658203125,-115.55400085449219 C1108.781005859375,-164.77200317382812 1025.219970703125,-87.2040023803711 1025.219970703125,-87.2040023803711" fill-opacity="1"></path><path fill="#ffffff" clip-rule="nonzero" d=" M698,405 C698,405 642,405 642,405 C642,405 642,479 642,479 C642,479 698,479 698,479 C698,479 698,405 698,405" fill-opacity="1"></path></mask></defs><g clip-path="url(#__lottie_element_5)"><g clip-path="url(#__lottie_element_7)" transform="matrix(0.03999999910593033,0,0,0.03999999910593033,0,0)" opacity="1" style="display: block;"><g clip-path="url(#__lottie_element_28)" transform="matrix(1,0,0,1,-200,-200)" opacity="1" style="display: block;"><g mask="url(#__lottie_element_29)"><g style="display: none;" transform="matrix(-25,0,0,25,800,173)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,12,8.5)"><path fill="rgb(181.02,185.99,192.98)" fill-opacity="1" d=" M-4,-1.3799999952316284 C-4,-3.5889999866485596 -2.2090001106262207,-5.380000114440918 0,-5.380000114440918 C2.2090001106262207,-5.380000114440918 4,-3.5889999866485596 4,-1.3799999952316284 C4,-1.3799999952316284 4,2.509999990463257 4,2.509999990463257 C4,4.718999862670898 2.2090001106262207,6.5 0,6.5 C-2.2090001106262207,6.5 -4,4.718999862670898 -4,2.509999990463257 C-4,2.509999990463257 -4,-1.3799999952316284 -4,-1.3799999952316284z"></path></g><g opacity="1" transform="matrix(1,0,0,1,12,14)"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(181.02,185.99,192.98)" stroke-opacity="1" stroke-width="2" d=" M-7,-2.990000009536743 C-7,0.8759999871253967 -3.865999937057495,4.010000228881836 0,4.010000228881836 C3.865999937057495,4.010000228881836 7,0.8759999871253967 7,-2.990000009536743"></path></g><g opacity="1" transform="matrix(1,0,0,1,12,20)"><path fill="rgb(181.02,185.99,192.98)" fill-opacity="1" d=" M-1,-2 C-1,-2.2760000228881836 -0.7760000228881836,-2.5 -0.5,-2.5 C-0.5,-2.5 0.5,-2.5 0.5,-2.5 C0.7760000228881836,-2.5 1,-2.2760000228881836 1,-2 C1,-2 1,2 1,2 C1,2.2760000228881836 0.7760000228881836,2.5 0.5,2.5 C0.5,2.5 -0.5,2.5 -0.5,2.5 C-0.7760000228881836,2.5 -1,2.2760000228881836 -1,2 C-1,2 -1,-2 -1,-2z"></path></g><g opacity="1" transform="matrix(1,0,0,1,12,22)"><path fill="rgb(181.02,185.99,192.98)" fill-opacity="1" d=" M3,-1 C3.552000045776367,-1 4,-0.5519999861717224 4,0 C4,0.5519999861717224 3.552000045776367,1 3,1 C3,1 -3,1 -3,1 C-3.552000045776367,1 -4,0.5519999861717224 -4,0 C-4,-0.5519999861717224 -3.552000045776367,-1 -3,-1 C-3,-1 3,-1 3,-1z"></path></g></g><g transform="matrix(-25,0,0,25,800,173)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,12,8.5)"><path fill="rgb(181.02,185.99,192.98)" fill-opacity="1" d=" M-4,-1.4600000381469727 C-4,-3.6689999103546143 -2.2090001106262207,-5.460000038146973 0,-5.460000038146973 C2.2090001106262207,-5.460000038146973 4,-3.6689999103546143 4,-1.4600000381469727 C4,-1.4600000381469727 4,2.5 4,2.5 C4,4.709000110626221 2.2090001106262207,6.5 0,6.5 C-2.2090001106262207,6.5 -4,4.709000110626221 -4,2.5 C-4,2.5 -4,-1.4600000381469727 -4,-1.4600000381469727z"></path></g><g opacity="1" transform="matrix(1,0,0,1,12,14)"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(181.02,185.99,192.98)" stroke-opacity="1" stroke-width="2" d=" M-7,-3 C-7,0.8659999966621399 -3.865999937057495,4 0,4 C3.865999937057495,4 7,0.8659999966621399 7,-3"></path></g><g opacity="1" transform="matrix(1,0,0,1,12,20)"><path fill="rgb(181.02,185.99,192.98)" fill-opacity="1" d=" M-1,-2 C-1,-2.2760000228881836 -0.7760000228881836,-2.5 -0.5,-2.5 C-0.5,-2.5 0.5,-2.5 0.5,-2.5 C0.7760000228881836,-2.5 1,-2.2760000228881836 1,-2 C1,-2 1,2 1,2 C1,2.2760000228881836 0.7760000228881836,2.5 0.5,2.5 C0.5,2.5 -0.5,2.5 -0.5,2.5 C-0.7760000228881836,2.5 -1,2.2760000228881836 -1,2 C-1,2 -1,-2 -1,-2z"></path></g><g opacity="1" transform="matrix(1,0,0,1,12,22)"><path fill="rgb(181.02,185.99,192.98)" fill-opacity="1" d=" M3,-1 C3.552000045776367,-1 4,-0.5519999861717224 4,0 C4,0.5519999861717224 3.552000045776367,1 3,1 C3,1 -3,1 -3,1 C-3.552000045776367,1 -4,0.5519999861717224 -4,0 C-4,-0.5519999861717224 -3.552000045776367,-1 -3,-1 C-3,-1 3,-1 3,-1z"></path></g></g></g></g><g clip-path="url(#__lottie_element_18)" transform="matrix(1,0,0,1,-200,-200)" opacity="1" style="display: none;"><g transform="matrix(25,0,0,25,200,200)" opacity="1" style="display: none;"><g opacity="1" transform="matrix(1,0,0,1,12,12)"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(181.02,185.99,192.98)" stroke-opacity="1" stroke-width="2" d=" M9.932000160217285,-9.932000160217285 C9.97700023651123,-9.97700023651123 10,-10 10,-10"></path></g></g><g style="display: none;"><g><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"></path></g></g></g><g clip-path="url(#__lottie_element_11)" style="display: none;" transform="matrix(1,0,0,1,-200,-200)" opacity="1"><g style="display: block;" transform="matrix(25,0,0,25,200,200)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,12,12)"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(181.02,185.99,192.98)" stroke-opacity="1" stroke-width="2" d=" M-10,10 C-10,10 10,-10 10,-10"></path></g></g></g></g></g></svg>
+        <div class="anon-button-popup flex">
+          <div class="anon-rectangle">Turn Off Microphone</div>
+          <div class="anon-triangle"></div>
+        </div>
+      </div>
+      <div class="deafen-button flex">
+        <svg width="20" height="20" viewBox="0 0 24 24"><defs><clipPath><rect width="24" height="24" x="0" y="0"></rect></clipPath><clipPath><path d="M0,0 L600,0 L600,600 L0,600z"></path></clipPath><clipPath><path d="M0,0 L1000,0 L1000,1000 L0,1000z"></path></clipPath><clipPath><path d="M0,0 L1000,0 L1000,1000 L0,1000z"></path></clipPath><mask><rect fill="#ffffff" width="600" height="600" transform="matrix(0.9615384936332703,0,0,0.9615384936332703,211.53846740722656,211.53846740722656)"></rect><path fill="#000000" clip-rule="nonzero" d=" M67.22000122070312,823.7960205078125 C67.22000122070312,823.7960205078125 -126.3030014038086,1017.75 -126.3030014038086,1017.75 C-126.3030014038086,1017.75 -76.63800048828125,1067.092041015625 -76.63800048828125,1067.092041015625 C-76.63800048828125,1067.092041015625 -22.31999969482422,1121.0560302734375 -22.31999969482422,1121.0560302734375 C-22.31999969482422,1121.0560302734375 171.2030029296875,927.1019897460938 171.2030029296875,927.1019897460938 C171.2030029296875,927.1019897460938 239.677001953125,860.3419799804688 186.88099670410156,810.114013671875 C130,756 67.22000122070312,823.7960205078125 67.22000122070312,823.7960205078125" fill-opacity="1"></path></mask><clipPath><path d="M0,0 L1000,0 L1000,1000 L0,1000z"></path></clipPath><path></path><clipPath><path d="M0,0 L1000,0 L1000,1000 L0,1000z"></path></clipPath><path d=" M0.5009999871253967,-0.10000000149011612 C0.5009999871253967,-0.10000000149011612 -0.09300000220537186,-0.10000000149011612 -0.09300000220537186,-0.10000000149011612 C-0.09300000220537186,-0.10000000149011612 -0.09300000220537186,1.0759999752044678 -0.09300000220537186,1.0759999752044678 C-0.09300000220537186,1.0759999752044678 0.5009999871253967,1.0759999752044678 0.5009999871253967,1.0759999752044678 C0.5009999871253967,1.0759999752044678 0.5009999871253967,-0.10000000149011612 0.5009999871253967,-0.10000000149011612" fill-opacity="1"></path><clipPath><path d="M0,0 L1000,0 L1000,1000 L0,1000z"></path></clipPath><mask><rect fill="#ffffff" width="600" height="600" transform="matrix(0.9615384936332703,0,0,0.9615384936332703,211.53846740722656,211.53846740722656)"></rect><path fill="#000000" clip-rule="nonzero" d=" M67.44400024414062,823.5819702148438 C67.44400024414062,823.5819702148438 -126.11100006103516,1017.5659790039062 -126.11100006103516,1017.5659790039062 C-126.11100006103516,1017.5659790039062 -76.44599914550781,1066.907958984375 -76.44599914550781,1066.907958984375 C-76.44599914550781,1066.907958984375 -22.128000259399414,1120.8719482421875 -22.128000259399414,1120.8719482421875 C-22.128000259399414,1120.8719482421875 171.427001953125,926.8880004882812 171.427001953125,926.8880004882812 C171.427001953125,926.8880004882812 239.9010009765625,860.1279907226562 187.10499572753906,809.9000244140625 C130.2239990234375,755.7860107421875 67.44400024414062,823.5819702148438 67.44400024414062,823.5819702148438" fill-opacity="1"></path></mask><clipPath><path d="M0,0 L1000,0 L1000,1000 L0,1000z"></path></clipPath><path></path><clipPath><path d="M0,0 L1000,0 L1000,1000 L0,1000z"></path></clipPath><path d=" M0.5009999871253967,-0.10000000149011612 C0.5009999871253967,-0.10000000149011612 -0.09300000220537186,-0.10000000149011612 -0.09300000220537186,-0.10000000149011612 C-0.09300000220537186,-0.10000000149011612 -0.09300000220537186,1.0759999752044678 -0.09300000220537186,1.0759999752044678 C-0.09300000220537186,1.0759999752044678 0.5009999871253967,1.0759999752044678 0.5009999871253967,1.0759999752044678 C0.5009999871253967,1.0759999752044678 0.5009999871253967,-0.10000000149011612 0.5009999871253967,-0.10000000149011612" fill-opacity="1"></path></defs><g clip-path="url(#__lottie_element_673)"><g clip-path="url(#__lottie_element_675)" transform="matrix(0.03999999910593033,0,0,0.03999999910593033,0,0)" opacity="1" style="display: block;"><g clip-path="url(#__lottie_element_710)" transform="matrix(1.0399999618530273,0,0,1.0399999618530273,-220,-220)" opacity="1" style="display: none;"><g mask="url(#__lottie_element_711)"><g clip-path="url(#__lottie_element_721)" transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g transform="matrix(25,0,0,25,200,200)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,12,12.288000106811523)"><path fill="rgb(181.02,185.99,192.98)" fill-opacity="1" d=" M-8.000072479248047,-0.2881828546524048 C-7.999939918518066,-4.706087589263916 -4.418000221252441,-8.288000106811523 0,-8.288000106811523 C4.418000221252441,-8.288000106811523 7.999929904937744,-4.706122875213623 8.000077247619629,-0.2881803512573242 C8.000102043151855,0.40481603145599365 7.954133987426758,1.0718117952346802 7.854161262512207,1.7118114233016968 C7.854161262512207,1.7118114233016968 6.000174522399902,1.7118886709213257 6.000174522399902,1.7118886709213257 C5.05618143081665,1.7119280099868774 4.167206287384033,2.156961679458618 3.6002418994903564,2.911979913711548 C3.6002418994903564,2.911979913711548 1.6273654699325562,5.542043209075928 1.6273654699325562,5.542043209075928 C1.1583948135375977,6.168058395385742 1.03643000125885,6.988057613372803 1.3044586181640625,7.72304105758667 C1.8895213603973389,9.332005500793457 3.8875467777252197,10.287915229797363 5.482487678527832,9.131856918334961 C8.839362144470215,6.700735092163086 10.00019359588623,3.3797173500061035 10.000062942504883,-0.28826361894607544 C9.999899864196777,-5.811119556427002 5.5229997634887695,-10.288000106811523 0,-10.288000106811523 C-5.5229997634887695,-10.288000106811523 -9.99986457824707,-5.81110954284668 -10.000057220458984,-0.2882695198059082 C-10.000213623046875,3.3797030448913574 -8.83936882019043,6.700726509094238 -5.482500076293945,9.131853103637695 C-3.8875625133514404,10.28791332244873 -1.8895366191864014,9.33200740814209 -1.304471492767334,7.7230448722839355 C-1.036441683769226,6.988062381744385 -1.1584053039550781,6.168063640594482 -1.627374529838562,5.54204797744751 C-1.627374529838562,5.54204797744751 -3.600245475769043,2.911982774734497 -3.600245475769043,2.911982774734497 C-4.167208194732666,2.156964063644409 -5.056182384490967,1.7119290828704834 -6.0001749992370605,1.7118881940841675 C-6.0001749992370605,1.7118881940841675 -7.854179859161377,1.7118425369262695 -7.854179859161377,1.7118425369262695 C-7.954162120819092,1.071841835975647 -8.000097274780273,0.40481364727020264 -8.000072479248047,-0.2881828546524048z"></path></g></g></g><g clip-path="url(#__lottie_element_714)" style="display: none;"><g style="display: none;"><g><path></path></g></g></g></g></g><g clip-path="url(#__lottie_element_692)" style="display: block;" transform="matrix(1.0399999618530273,0,0,1.0399999618530273,-220,-220)" opacity="1"><g mask="url(#__lottie_element_693)"><g clip-path="url(#__lottie_element_703)" style="display: block;" transform="matrix(1,0,0,1,0,0)" opacity="1"><g style="display: block;" transform="matrix(25,0,0,25,200,200)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,12,12.288000106811523)"><path fill="rgb(181.02,185.99,192.98)" fill-opacity="1" d=" M-8,-0.2879999876022339 C-8,-4.705999851226807 -4.418000221252441,-8.288000106811523 0,-8.288000106811523 C4.418000221252441,-8.288000106811523 8,-4.705999851226807 8,-0.2879999876022339 C8,0.4050000011920929 7.953999996185303,1.0720000267028809 7.854000091552734,1.7120000123977661 C7.854000091552734,1.7120000123977661 6,1.7120000123977661 6,1.7120000123977661 C5.056000232696533,1.7120000123977661 4.166999816894531,2.1570000648498535 3.5999999046325684,2.9119999408721924 C3.5999999046325684,2.9119999408721924 1.6269999742507935,5.541999816894531 1.6269999742507935,5.541999816894531 C1.1579999923706055,6.168000221252441 1.0360000133514404,6.98799991607666 1.3040000200271606,7.7230000495910645 C1.8890000581741333,9.331999778747559 3.88700008392334,10.288000106811523 5.48199987411499,9.131999969482422 C8.83899974822998,6.701000213623047 10,3.380000114440918 10,-0.2879999876022339 C10,-5.810999870300293 5.5229997634887695,-10.288000106811523 0,-10.288000106811523 C-5.5229997634887695,-10.288000106811523 -10,-5.810999870300293 -10,-0.2879999876022339 C-10,3.380000114440918 -8.83899974822998,6.701000213623047 -5.48199987411499,9.131999969482422 C-3.88700008392334,10.288000106811523 -1.8890000581741333,9.331999778747559 -1.3040000200271606,7.7230000495910645 C-1.0360000133514404,6.98799991607666 -1.1579999923706055,6.168000221252441 -1.6269999742507935,5.541999816894531 C-1.6269999742507935,5.541999816894531 -3.5999999046325684,2.9119999408721924 -3.5999999046325684,2.9119999408721924 C-4.166999816894531,2.1570000648498535 -5.056000232696533,1.7120000123977661 -6,1.7120000123977661 C-6,1.7120000123977661 -7.854000091552734,1.7120000123977661 -7.854000091552734,1.7120000123977661 C-7.953999996185303,1.0720000267028809 -8,0.4050000011920929 -8,-0.2879999876022339z"></path></g></g></g><g clip-path="url(#__lottie_element_696)" style="display: none;"><g style="display: none;"><g><path></path></g></g></g></g></g><g clip-path="url(#__lottie_element_682)" transform="matrix(1,0,0,1,-200,-200)" opacity="1" style="display: none;"><g style="display: none;"><g><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"></path></g></g><g style="display: none;"><g><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"></path></g></g></g><g style="display: none;"><g><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"></path></g></g></g></g></svg>
+        <div class="anon-button-popup flex">
+          <div class="anon-rectangle">Deafen</div>
+          <div class="anon-triangle"></div>
+        </div>
+      </div>
+      <div class="cogwheel-button flex">
+        <svg width="20" height="20" viewBox="0 0 24 24"><defs><clipPath><rect width="24" height="24" x="0" y="0"></rect></clipPath><clipPath><path d="M0,0 L600,0 L600,600 L0,600z"></path></clipPath></defs><g clip-path="url(#__lottie_element_728)"><g clip-path="url(#__lottie_element_730)" transform="matrix(0.03999999910593033,0,0,0.03999999910593033,0,0)" opacity="1" style="display: block;"><g transform="matrix(25,0,0,25,300,300)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="rgb(181.02,185.99,192.98)" fill-opacity="1" d=" M-1.4420000314712524,-10.906000137329102 C-1.8949999809265137,-10.847000122070312 -2.1470000743865967,-10.375 -2.078000068664551,-9.92300033569336 C-1.899999976158142,-8.756999969482422 -2.265000104904175,-7.7210001945495605 -3.061000108718872,-7.390999794006348 C-3.8570001125335693,-7.060999870300293 -4.8480000495910645,-7.534999847412109 -5.546000003814697,-8.484999656677246 C-5.816999912261963,-8.852999687194824 -6.329999923706055,-9.008999824523926 -6.691999912261963,-8.730999946594238 C-7.458000183105469,-8.142999649047852 -8.142999649047852,-7.458000183105469 -8.730999946594238,-6.691999912261963 C-9.008999824523926,-6.329999923706055 -8.852999687194824,-5.816999912261963 -8.484999656677246,-5.546000003814697 C-7.534999847412109,-4.8480000495910645 -7.060999870300293,-3.8570001125335693 -7.390999794006348,-3.061000108718872 C-7.7210001945495605,-2.265000104904175 -8.756999969482422,-1.899999976158142 -9.92300033569336,-2.078000068664551 C-10.375,-2.1470000743865967 -10.847000122070312,-1.8949999809265137 -10.906000137329102,-1.4420000314712524 C-10.968000411987305,-0.9700000286102295 -11,-0.48899999260902405 -11,0 C-11,0.48899999260902405 -10.968000411987305,0.9700000286102295 -10.906000137329102,1.4420000314712524 C-10.847000122070312,1.8949999809265137 -10.375,2.1470000743865967 -9.92300033569336,2.078000068664551 C-8.756999969482422,1.899999976158142 -7.7210001945495605,2.265000104904175 -7.390999794006348,3.061000108718872 C-7.060999870300293,3.8570001125335693 -7.534999847412109,4.8470001220703125 -8.484999656677246,5.546000003814697 C-8.852999687194824,5.816999912261963 -9.008999824523926,6.328999996185303 -8.730999946594238,6.691999912261963 C-8.142999649047852,7.458000183105469 -7.458000183105469,8.142999649047852 -6.691999912261963,8.730999946594238 C-6.329999923706055,9.008999824523926 -5.816999912261963,8.852999687194824 -5.546000003814697,8.484999656677246 C-4.8480000495910645,7.534999847412109 -3.8570001125335693,7.060999870300293 -3.061000108718872,7.390999794006348 C-2.265000104904175,7.7210001945495605 -1.899999976158142,8.756999969482422 -2.078000068664551,9.92300033569336 C-2.1470000743865967,10.375 -1.8949999809265137,10.847000122070312 -1.4420000314712524,10.906000137329102 C-0.9700000286102295,10.968000411987305 -0.48899999260902405,11 0,11 C0.48899999260902405,11 0.9700000286102295,10.968000411987305 1.4420000314712524,10.906000137329102 C1.8949999809265137,10.847000122070312 2.1470000743865967,10.375 2.078000068664551,9.92300033569336 C1.899999976158142,8.756999969482422 2.2660000324249268,7.7210001945495605 3.062000036239624,7.390999794006348 C3.8580000400543213,7.060999870300293 4.8480000495910645,7.534999847412109 5.546000003814697,8.484999656677246 C5.816999912261963,8.852999687194824 6.328999996185303,9.008999824523926 6.691999912261963,8.730999946594238 C7.458000183105469,8.142999649047852 8.142999649047852,7.458000183105469 8.730999946594238,6.691999912261963 C9.008999824523926,6.328999996185303 8.852999687194824,5.816999912261963 8.484999656677246,5.546000003814697 C7.534999847412109,4.8480000495910645 7.060999870300293,3.8570001125335693 7.390999794006348,3.061000108718872 C7.7210001945495605,2.265000104904175 8.756999969482422,1.899999976158142 9.92300033569336,2.078000068664551 C10.375,2.1470000743865967 10.847000122070312,1.8949999809265137 10.906000137329102,1.4420000314712524 C10.968000411987305,0.9700000286102295 11,0.48899999260902405 11,0 C11,-0.48899999260902405 10.968000411987305,-0.9700000286102295 10.906000137329102,-1.4420000314712524 C10.847000122070312,-1.8949999809265137 10.375,-2.1470000743865967 9.92300033569336,-2.078000068664551 C8.756999969482422,-1.899999976158142 7.7210001945495605,-2.265000104904175 7.390999794006348,-3.061000108718872 C7.060999870300293,-3.8570001125335693 7.534999847412109,-4.8480000495910645 8.484999656677246,-5.546000003814697 C8.852999687194824,-5.816999912261963 9.008999824523926,-6.329999923706055 8.730999946594238,-6.691999912261963 C8.142999649047852,-7.458000183105469 7.458000183105469,-8.142999649047852 6.691999912261963,-8.730999946594238 C6.328999996185303,-9.008999824523926 5.817999839782715,-8.852999687194824 5.546999931335449,-8.484999656677246 C4.848999977111816,-7.534999847412109 3.8580000400543213,-7.060999870300293 3.062000036239624,-7.390999794006348 C2.2660000324249268,-7.7210001945495605 1.9010000228881836,-8.756999969482422 2.0789999961853027,-9.92300033569336 C2.1480000019073486,-10.375 1.8949999809265137,-10.847000122070312 1.4420000314712524,-10.906000137329102 C0.9700000286102295,-10.968000411987305 0.48899999260902405,-11 0,-11 C-0.48899999260902405,-11 -0.9700000286102295,-10.968000411987305 -1.4420000314712524,-10.906000137329102z M4,0 C4,2.2090001106262207 2.2090001106262207,4 0,4 C-2.2090001106262207,4 -4,2.2090001106262207 -4,0 C-4,-2.2090001106262207 -2.2090001106262207,-4 0,-4 C2.2090001106262207,-4 4,-2.2090001106262207 4,0z"></path></g></g></g></g></svg>
+        <div class="anon-button-popup flex">
+          <div class="anon-rectangle">User Settings</div>
+          <div class="anon-triangle"></div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <!--- Top Bar  --->
+
+  <div class="top-bar flex">
+    <div class="top-left flex">
+      <div class="user-pfp">
+        <div class="user-status flex">
+          <div class="user-status-1"></div>
+          <div class="user-status-2 dnd"></div>
+          <svg viewBox="0 0 10 10">
+            <rect x="3.2" y="4.2" width="3.65" height="1.5"/>
+          </svg>
+        </div>
+
+      </div>
+      <div class="user-name">
+        <a href="https://discord.com/users/898175728611389451">Rīper</a>
+        <div class="dm-popup flex">
+          <div class="dm-triangle"></div>
+          <div class="dm-rectangle" href="https://discord.com/users/898175728611389451">meleoidas</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="top-right flex">
+      <div class="top-right-voice flex">
+        <svg class="top-bar-hover-effect" x="0" y="0" width="24" height="24"><path fill="currentColor" d="M2 7.4A5.4 5.4 0 0 1 7.4 2c.36 0 .7.22.83.55l1.93 4.64a1 1 0 0 1-.43 1.25L7 10a8.52 8.52 0 0 0 7 7l1.12-2.24a1 1 0 0 1 1.19-.51l5.06 1.56c.38.11.63.46.63.85C22 19.6 19.6 22 16.66 22h-.37C8.39 22 2 15.6 2 7.71V7.4ZM13 3a1 1 0 0 1 1-1 8 8 0 0 1 8 8 1 1 0 1 1-2 0 6 6 0 0 0-6-6 1 1 0 0 1-1-1Z"></path><path fill="currentColor" d="M13 7a1 1 0 0 1 1-1 4 4 0 0 1 4 4 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 0 1-1-1Z"></path></svg>
+        <div class="dm-popup flex">
+          <div class="dm-triangle"></div>
+          <div class="dm-rectangle">Start Voice Call</div>
+        </div>
+      </div>
+
+      <div class="top-right-video flex">
+        <svg class="top-bar-hover-effect" x="0" y="0" width="24" height="24"><path fill="currentColor" d="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3 3 0 0 0 3-3v-2.12a1 1 0 0 0 .55.9l3 1.5a1 1 0 0 0 1.45-.9V7.62a1 1 0 0 0-1.45-.9l-3 1.5a1 1 0 0 0-.55.9V7a3 3 0 0 0-3-3H4Z"></path></svg>
+        <div class="dm-popup flex">
+          <div class="dm-triangle"></div>
+          <div class="dm-rectangle">Start Video Call</div>
+        </div>
+      </div>
+
+      <div class="top-right-pin flex">
+        <svg class="top-bar-hover-effect" x="0" y="0" width="24" height="24"><path fill="currentColor" d="M19.38 11.38a3 3 0 0 0 4.24 0l.03-.03a.5.5 0 0 0 0-.7L13.35.35a.5.5 0 0 0-.7 0l-.03.03a3 3 0 0 0 0 4.24L13 5l-2.92 2.92-3.65-.34a2 2 0 0 0-1.6.58l-.62.63a1 1 0 0 0 0 1.42l9.58 9.58a1 1 0 0 0 1.42 0l.63-.63a2 2 0 0 0 .58-1.6l-.34-3.64L19 11l.38.38ZM9.07 17.07a.5.5 0 0 1-.08.77l-5.15 3.43a.5.5 0 0 1-.63-.06l-.42-.42a.5.5 0 0 1-.06-.63L6.16 15a.5.5 0 0 1 .77-.08l2.14 2.14Z"></path></svg>
+        <div class="dm-popup flex">
+          <div class="dm-triangle"></div>
+          <div class="dm-rectangle">Pinned Messages</div>
+        </div>
+      </div>
+
+      <div class="top-right-add-friends flex">
+        <svg class="top-bar-hover-effect" x="0" y="0" width="24" height="24"><path fill="currentColor" d="M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44 1.12a5 5 0 0 1 2.14 3.08c.01.06.06.1.12.1ZM16.62 13.17c-.22.29-.65.37-.92.14-.34-.3-.7-.57-1.09-.82-.52-.33-.7-1.05-.47-1.63.11-.27.2-.57.26-.87.11-.54.55-1 1.1-.92 1.6.2 3.04.92 4.15 1.98.3.27-.25.95-.65.95a3 3 0 0 0-2.38 1.17ZM15.19 15.61c.13.16.02.39-.19.39a3 3 0 0 0-1.52 5.59c.2.12.26.41.02.41h-8a.5.5 0 0 1-.5-.5v-2.1c0-.25-.31-.33-.42-.1-.32.67-.67 1.58-.88 2.54a.2.2 0 0 1-.2.16A1.5 1.5 0 0 1 2 20.5a7.5 7.5 0 0 1 13.19-4.89ZM9.5 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM15.5 22Z"></path><path fill="currentColor" d="M19 14a1 1 0 0 1 1 1v3h3a1 1 0 0 1 0 2h-3v3a1 1 0 0 1-2 0v-3h-3a1 1 0 1 1 0-2h3v-3a1 1 0 0 1 1-1Z"></path></svg>
+        <div class="dm-popup flex">
+          <div class="dm-triangle"></div>
+          <div class="dm-rectangle">Add Friends to DM</div>
+        </div>
+      </div>
+
+      <div class="top-right-user-profile flex">
+        <svg class="top-bar-hover-effect" x="0" y="0" width="24" height="24"><path fill="currentColor" fill-rule="evenodd" d="M23 12.38c-.02.38-.45.58-.78.4a6.97 6.97 0 0 0-6.27-.08.54.54 0 0 1-.44 0 8.97 8.97 0 0 0-11.16 3.55c-.1.15-.1.35 0 .5.37.58.8 1.13 1.28 1.61.24.24.64.15.8-.15.19-.38.39-.73.58-1.02.14-.21.43-.1.4.15l-.19 1.96c-.02.19.07.37.23.47A8.96 8.96 0 0 0 12 21a.4.4 0 0 1 .38.27c.1.33.25.65.4.95.18.34-.02.76-.4.77L12 23a11 11 0 1 1 11-10.62ZM15.5 7.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd"></path><path fill="currentColor" d="M24 19a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z"></path></svg>
+        <div class="dm-popup flex">
+          <div class="dm-triangle"></div>
+          <div class="dm-rectangle">Hide User Profile</div>
+        </div>
+      </div>
+
+      <div class="top-right-search flex">
+        <input type="text" placeholder="Search">
+        <svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M15.62 17.03a9 9 0 1 1 1.41-1.41l4.68 4.67a1 1 0 0 1-1.42 1.42l-4.67-4.68ZM17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" clip-rule="evenodd"></path></svg>
+      </div>
+
+      <div class="top-right-inbox flex"> 
+        <svg class="top-bar-hover-effect" x="0" y="0" width="24" height="24"><path fill="currentColor" fill-rule="evenodd" d="M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5ZM4 5.5C4 4.67 4.67 4 5.5 4h13c.83 0 1.5.67 1.5 1.5v6c0 .83-.67 1.5-1.5 1.5h-2.65c-.5 0-.85.5-.85 1a3 3 0 1 1-6 0c0-.5-.35-1-.85-1H5.5A1.5 1.5 0 0 1 4 11.5v-6Z" clip-rule="evenodd"></path></svg>
+        <div class="dm-popup flex">
+          <div class="dm-triangle"></div>
+          <div class="dm-rectangle">Inbox</div>
+        </div>
+      </div>
+
+      <div class="top-right-help flex">
+        <svg class="top-bar-hover-effect" x="0" y="0" width="24" height="24"><circle class="help-question-mark" cx="12" cy="12" r="10" fill="transparent"></circle><path fill="currentColor" fill-rule="evenodd" d="M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm-.28-16c-.98 0-1.81.47-2.27 1.14A1 1 0 1 1 7.8 7.01 4.73 4.73 0 0 1 11.72 5c2.5 0 4.65 1.88 4.65 4.38 0 2.1-1.54 3.77-3.52 4.24l.14 1a1 1 0 0 1-1.98.27l-.28-2a1 1 0 0 1 .99-1.14c1.54 0 2.65-1.14 2.65-2.38 0-1.23-1.1-2.37-2.65-2.37ZM13 17.88a1.13 1.13 0 1 1-2.25 0 1.13 1.13 0 0 1 2.25 0Z" clip-rule="evenodd"></path></svg>
+        <div class="dm-popup flex">
+          <div class="dm-triangle"></div>
+          <div class="dm-rectangle">Help</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--- Right Bar --->
+  <div class="right-bar flex">
+    <div class="user-banner flex">
+
+      <a href="https://discord.com/users/898175728611389451">
+      <div class="user-add-friend flex">
+        <svg width="16" height="16" viewBox="0 0 24 24"><path d="M19 14a1 1 0 0 1 1 1v3h3a1 1 0 0 1 0 2h-3v3a1 1 0 0 1-2 0v-3h-3a1 1 0 1 1 0-2h3v-3a1 1 0 0 1 1-1Z" fill="currentColor"></path><path d="M16.83 12.93c.26-.27.26-.75-.08-.92A9.5 9.5 0 0 0 12.47 11h-.94A9.53 9.53 0 0 0 2 20.53c0 .81.66 1.47 1.47 1.47h.22c.24 0 .44-.17.5-.4.29-1.12.84-2.17 1.32-2.91.14-.21.43-.1.4.15l-.26 2.61c-.02.3.2.55.5.55h7.64c.12 0 .17-.31.06-.36C12.82 21.14 12 20.22 12 19a3 3 0 0 1 3-3h.5a.5.5 0 0 0 .5-.5V15c0-.8.31-1.53.83-2.07ZM12 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" fill="currentColor" ></path></svg>  
+        <div class="dm-popup flex">
+          <div class="dm-rectangle">Add Friend</div>
+          <div class="dm-triangle"></div>
+        </div>
+      </div>
+      </a>
+
+      <div class="user-more flex">
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M4 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm10-2a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm8 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" clip-rule="evenodd"></path></svg>
+        <div class="dm-popup flex">
+          <div class="dm-rectangle">More</div>
+          <div class="dm-triangle"></div>
+        </div>
+      </div>
+      
+      
+      <div class="user-pfp-border">
+        <div class="user-pfp">
+          <div class="user-status flex">
+            <div class="user-status-1"></div>
+            <div class="user-status-2 dnd"></div>
+            <svg viewBox="0 0 10 10">
+              <rect x="1.1" y="3.7" rx="15%" ry="15%" width="7.7" height="2.65"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="user-details">
+      <div class="user-name">Rīper</div>
+
+      <div class="user-username-and-badges flex">
+
+        <div class="user-username">meleoidas</div>
+        
+        <div class="user-clan-tag flex">
+          <img class="user-clan-tag-icon" src="media/user 1 clan tag icon.png">
+          <div class="user-clan-tag-text">
+            UWU
+          </div>
+        </div>
+
+        <div class="user-badges flex">
+
+          <div class="badge-tractor flex">
+            <img src="https://badges.vencord.dev/badges/898175728611389451/1-65e7e6c798c8e3736d2636be82a47c8828a6d662.svg">
+            <div class="dm-popup flex">
+              <div class="dm-rectangle">Tractor</div>
+              <div class="dm-triangle"></div>
+            </div>
+          </div>
+          <a href="https://discord.com/settings/hypesquad-online">
+            <div class="badge-hypesquad">
+              <img src="https://cdn.discordapp.com/badge-icons/3aa41de486fa12454c3761e8e223442e.png">
+              <div class="dm-popup flex">
+                <div class="dm-rectangle">HypeSquad Balance</div>
+                <div class="dm-triangle"></div>
+              </div>
+            </div>
+          </a>
+          <a href="https://support-dev.discord.com/hc/en-us/articles/10113997751447?ref=badge">
+            <div class="badge-active-developer">
+              <img src="https://cdn.discordapp.com/badge-icons/6bdc42827a38498929a4920da12695d9.png">
+              <div class="dm-popup flex">
+                <div class="dm-rectangle">Active Developer</div>
+                <div class="dm-triangle"></div>
+              </div>
+            </div>
+          </a>
+          <div class="badge-original">
+            <img src="https://cdn.discordapp.com/badge-icons/6de6d34650760ba5551a79732e98ed60.png">
+            <div class="dm-popup flex">
+              <div class="dm-rectangle">Originally known as an <br> orphan#0001</div>
+              <div class="dm-triangle"></div>
+            </div>
+          </div>
+          <a href="https://discord.com/discovery/quests">
+            <div class="badge-quest">
+              <img src="https://cdn.discordapp.com/badge-icons/7d9ae358c8c5e118768335dbe68b4fb8.png">
+              <div class="dm-popup flex">
+                <div class="dm-rectangle">Completed a Quest</div>
+                <div class="dm-triangle"></div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+        <div>
+          
+        </div>
+
+      </div>
+
+      <div class="member-since">
+        <div class="member-since-text">Member Since</div>
+        <div class="member-since-date">14 Oct 2021</div>
+      </div>
+    </div>
+    <div class="view-full-profile flex">
+      <div>View Full Profile</div>
+    </div>
+  </div>
+
+  <!--- Text Bar --->
+  <div class="text-bar flex">
+    <div class="text-bar-input flex">
+      <div class="text-bar-attach flex">
+        <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="transparent"></circle><path fill="rgb(199,200,206)" fill-rule="evenodd" d="M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm0-17a1 1 0 0 1 1 1v4h4a1 1 0 1 1 0 2h-4v4a1 1 0 1 1-2 0v-4H7a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z" clip-rule="evenodd"></path></svg>
+      </div>
+      <div class="text-bar-text flex">
+        <input placeholder="Message @Rīper">
+      </div>
+      <div class="text-bar-gift flex">
+        <svg width="24" height="24" viewBox="0 0 24 24"><path fill="rgb(199,200,206)" fill-rule="evenodd" d="M4 6a4 4 0 0 1 4-4h.09c1.8 0 3.39 1.18 3.91 2.9A4.09 4.09 0 0 1 15.91 2H16a4 4 0 0 1 3.46 6H20a2 2 0 0 1 2 2v1.5a.5.5 0 0 1-.5.5h-19a.5.5 0 0 1-.5-.5V10c0-1.1.9-2 2-2h.54A3.98 3.98 0 0 1 4 6Zm12 2a2 2 0 1 0 0-4h-.09c-.96 0-1.8.65-2.02 1.58L13.29 8H16Zm-5.89-2.42.6 2.42H8a2 2 0 1 1 0-4h.09c.96 0 1.8.65 2.02 1.58Z" clip-rule="evenodd"></path><path fill="rgb(199,200,206)" d="M3 20c0 1.1.9 2 2 2h5.5a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0-.5.5V20ZM13.5 22a.5.5 0 0 1-.5-.5v-7c0-.28.22-.5.5-.5h7c.28 0 .5.22.5.5V20a2 2 0 0 1-2 2h-5.5Z"></path></svg>
+      </div>
+      <div class="text-bar-gifs flex">
+        <svg viewBox="0 0 24 24" width="24" height="24"><defs><clipPath><rect width="24" height="24" x="0" y="0"></rect></clipPath><clipPath><path d="M0,0 L600,0 L600,600 L0,600z"></path></clipPath><g id="__lottie_element_962"><g clip-path="url(#__lottie_element_966)" transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g transform="matrix(25,0,0,25,300.0060119628906,299.99298095703125)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="rgb(255,255,255)" fill-opacity="1" d=" M3.0299999713897705,3.7190001010894775 C3.0299999713897705,3.7190001010894775 4.604000091552734,3.7190001010894775 4.604000091552734,3.7190001010894775 C4.604000091552734,3.7190001010894775 4.604000091552734,0.8949999809265137 4.604000091552734,0.8949999809265137 C4.604000091552734,0.8949999809265137 7.363999843597412,0.8949999809265137 7.363999843597412,0.8949999809265137 C7.363999843597412,0.8949999809265137 7.363999843597412,-0.5289999842643738 7.363999843597412,-0.5289999842643738 C7.363999843597412,-0.5289999842643738 4.604000091552734,-0.5289999842643738 4.604000091552734,-0.5289999842643738 C4.604000091552734,-0.5289999842643738 4.604000091552734,-2.2960000038146973 4.604000091552734,-2.2960000038146973 C4.604000091552734,-2.2960000038146973 8,-2.2960000038146973 8,-2.2960000038146973 C8,-2.2960000038146973 8,-3.7190001010894775 8,-3.7190001010894775 C8,-3.7190001010894775 3.0299999713897705,-3.7190001010894775 3.0299999713897705,-3.7190001010894775 C3.0299999713897705,-3.7190001010894775 3.0299999713897705,3.7190001010894775 3.0299999713897705,3.7190001010894775z"></path></g></g><g transform="matrix(25,0,0,25,299.9960021972656,299.99298095703125)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="rgb(255,255,255)" fill-opacity="1" d=" M1.5199999809265137,3.7190001010894775 C1.5199999809265137,3.7190001010894775 -0.05400000140070915,3.7190001010894775 -0.05400000140070915,3.7190001010894775 C-0.05400000140070915,3.7190001010894775 -0.05400000140070915,-3.7190001010894775 -0.05400000140070915,-3.7190001010894775 C-0.05400000140070915,-3.7190001010894775 1.5199999809265137,-3.7190001010894775 1.5199999809265137,-3.7190001010894775 C1.5199999809265137,-3.7190001010894775 1.5199999809265137,3.7190001010894775 1.5199999809265137,3.7190001010894775z"></path></g></g><g transform="matrix(25,0,0,25,299.9950256347656,299.99298095703125)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="rgb(255,255,255)" fill-opacity="1" d=" M-4.820000171661377,3.869999885559082 C-5.445000171661377,3.869999885559082 -5.998000144958496,3.7079999446868896 -6.480000019073486,3.384999990463257 C-6.961999893188477,3.062000036239624 -7.335000038146973,2.6080000400543213 -7.60099983215332,2.0260000228881836 C-7.867000102996826,1.437000036239624 -8,0.7620000243186951 -8,0 C-8,-0.7549999952316284 -7.860000133514404,-1.4229999780654907 -7.579999923706055,-2.005000114440918 C-7.293000221252441,-2.5869998931884766 -6.879000186920166,-3.0429999828338623 -6.340000152587891,-3.374000072479248 C-5.794000148773193,-3.7049999237060547 -5.144000053405762,-3.869999885559082 -4.388999938964844,-3.869999885559082 C-3.749000072479248,-3.869999885559082 -3.177999973297119,-3.7339999675750732 -2.674999952316284,-3.4609999656677246 C-2.1649999618530273,-3.187999963760376 -1.7799999713897705,-2.802999973297119 -1.5210000276565552,-2.306999921798706 C-1.5210000276565552,-2.306999921798706 -2.739000082015991,-1.434000015258789 -2.739000082015991,-1.434000015258789 C-3.1059999465942383,-2.109999895095825 -3.6519999504089355,-2.447000026702881 -4.377999782562256,-2.447000026702881 C-5.039000034332275,-2.447000026702881 -5.546000003814697,-2.2320001125335693 -5.8979997634887695,-1.8009999990463257 C-6.25,-1.3769999742507935 -6.426000118255615,-0.7760000228881836 -6.426000118255615,0 C-6.426000118255615,0.7829999923706055 -6.25,1.3869999647140503 -5.8979997634887695,1.8109999895095825 C-5.546000003814697,2.234999895095825 -5.039000034332275,2.447000026702881 -4.377999782562256,2.447000026702881 C-4.083000183105469,2.447000026702881 -3.812999963760376,2.3929998874664307 -3.569000005722046,2.2850000858306885 C-3.316999912261963,2.1700000762939453 -3.124000072479248,2.0160000324249268 -2.986999988555908,1.8220000267028809 C-2.986999988555908,1.8220000267028809 -2.986999988555908,0.8949999809265137 -2.986999988555908,0.8949999809265137 C-2.986999988555908,0.8949999809265137 -4.701000213623047,0.8949999809265137 -4.701000213623047,0.8949999809265137 C-4.701000213623047,0.8949999809265137 -4.701000213623047,-0.5070000290870667 -4.701000213623047,-0.5070000290870667 C-4.701000213623047,-0.5070000290870667 -1.4559999704360962,-0.5070000290870667 -1.4559999704360962,-0.5070000290870667 C-1.4559999704360962,-0.5070000290870667 -1.4559999704360962,3.7190001010894775 -1.4559999704360962,3.7190001010894775 C-1.4559999704360962,3.7190001010894775 -2.7279999256134033,3.7190001010894775 -2.7279999256134033,3.7190001010894775 C-2.7279999256134033,3.7190001010894775 -2.933000087738037,3.006999969482422 -2.933000087738037,3.006999969482422 C-3.3570001125335693,3.5820000171661377 -3.9860000610351562,3.869999885559082 -4.820000171661377,3.869999885559082z"></path></g></g></g></g><clipPath id="__lottie_element_966"><path d="M0,0 L600,0 L600,600 L0,600z"></path></clipPath><filter id="__lottie_element_980" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"><feComponentTransfer in="SourceGraphic"><feFuncA type="table" tableValues="1.0 0.0"></feFuncA></feComponentTransfer></filter><mask id="__lottie_element_962_2" mask-type="alpha"><g filter="url(#__lottie_element_980)"><rect width="600" height="600" x="0" y="0" fill="#ffffff" opacity="0"></rect><use xlink:href="#__lottie_element_962"></use></g></mask></defs><g clip-path="url(#__lottie_element_956)"><g clip-path="url(#__lottie_element_958)" transform="matrix(0.03999999910593033,0,0,0.03999999910593033,0,0)" opacity="1" style="display: block;"><g mask="url(#__lottie_element_962_2)" style="display: block;"><g transform="matrix(25,0,0,25,300,300)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="rgb(199,200,206)" fill-opacity="1" d=" M-7,-10 C-8.656999588012695,-10 -10,-8.656999588012695 -10,-7 C-10,-7 -10,7 -10,7 C-10,8.656999588012695 -8.656999588012695,10 -7,10 C-7,10 7,10 7,10 C8.656999588012695,10 10,8.656999588012695 10,7 C10,7 10,-7 10,-7 C10,-8.656999588012695 8.656999588012695,-10 7,-10 C7,-10 -7,-10 -7,-10z"></path></g></g></g></g></g></svg>
+      </div>
+      <div class="text-bar-stickers flex">
+        <svg viewBox="0 0 24 24" width="24" height="24"><defs><clipPath><rect width="24" height="24" x="0" y="0"></rect></clipPath><clipPath><path d="M0,0 L600,0 L600,600 L0,600z"></path></clipPath><g id="__lottie_element_989"><g style="display: block;" transform="matrix(25,0,0,25,300,300)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="rgb(199,200,206)" fill-opacity="1" d=" M-5.5,-2 C-4.671999931335449,-2 -4,-2.671999931335449 -4,-3.5 C-4,-4.328000068664551 -4.671999931335449,-5 -5.5,-5 C-6.328000068664551,-5 -7,-4.328000068664551 -7,-3.5 C-7,-2.671999931335449 -6.328000068664551,-2 -5.5,-2z M7,-3.5 C7,-2.671999931335449 6.328000068664551,-2 5.5,-2 C4.671999931335449,-2 4,-2.671999931335449 4,-3.5 C4,-4.328000068664551 4.671999931335449,-5 5.5,-5 C6.328000068664551,-5 7,-4.328000068664551 7,-3.5z M-2.9110000133514404,-0.5559999942779541 C-3.2179999351501465,-1.0149999856948853 -3.8399999141693115,-1.1380000114440918 -4.298999786376953,-0.8309999704360962 C-4.757999897003174,-0.5239999890327454 -4.880000114440918,0.09700000286102295 -4.572999954223633,0.5559999942779541 C-3.5880000591278076,2.0269999504089355 -1.9079999923706055,3 0,3 C1.9079999923706055,3 3.5880000591278076,2.0269999504089355 4.572999954223633,0.5559999942779541 C4.880000114440918,0.09700000286102295 4.756999969482422,-0.5239999890327454 4.297999858856201,-0.8309999704360962 C3.8389999866485596,-1.1380000114440918 3.2179999351501465,-1.0149999856948853 2.9110000133514404,-0.5559999942779541 C2.2809998989105225,0.38499999046325684 1.2120000123977661,1 0,1 C-1.2120000123977661,1 -2.2809998989105225,0.38499999046325684 -2.9110000133514404,-0.5559999942779541z"></path></g></g></g><g id="__lottie_element_999"><g clip-path="url(#__lottie_element_1000)" transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: none;"><g style="display: none;"><g><path></path></g></g><g style="display: none;"><g><path></path></g></g><g style="display: none;"><g><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"></path></g></g><g style="display: none;"><g><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4"></path></g></g><g clip-path="url(#__lottie_element_1006)" style="display: none;"><g><path></path></g></g></g></g><clipPath id="__lottie_element_1000"><path d="M0,0 L600,0 L600,600 L0,600z"></path></clipPath><clipPath id="__lottie_element_1006"><path fill="rgb(199,200,206)" clip-rule="nonzero"></path><path fill="rgb(199,200,206)" clip-rule="nonzero"></path></clipPath><filter id="__lottie_element_1023" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"><feComponentTransfer in="SourceGraphic"><feFuncA type="table" tableValues="1.0 0.0"></feFuncA></feComponentTransfer></filter><mask id="__lottie_element_999_2" mask-type="alpha"><g filter="url(#__lottie_element_1023)"><rect width="600" height="600" x="0" y="0" fill="#ffffff" opacity="0"></rect><use xlink:href="#__lottie_element_999"></use></g></mask><filter id="__lottie_element_1024" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%"><feComponentTransfer in="SourceGraphic"><feFuncA type="table" tableValues="1.0 0.0"></feFuncA></feComponentTransfer></filter><mask id="__lottie_element_989_2" mask-type="alpha"><g filter="url(#__lottie_element_1024)"><rect width="600" height="600" x="0" y="0" fill="rgb(199,200,206)" opacity="0"></rect><use xlink:href="#__lottie_element_989"></use></g></mask></defs><g clip-path="url(#__lottie_element_982)"><g clip-path="url(#__lottie_element_984)" transform="matrix(0.03999999910593033,0,0,0.03999999910593033,0,0)" opacity="1" style="display: block;"><g mask="url(#__lottie_element_999_2)" style="display: none;"><g><g><path></path></g></g></g><g transform="matrix(25,0,0,25,300,300)" opacity="1" style="display: none;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="rgb(88,101,242)" fill-opacity="1" d=" M-6,-10 C-6,-10 6,-10 6,-10 C8.208999633789062,-10 10,-8.208999633789062 10,-6 C10,-6 10,1.5 10,1.5 C10,1.7760000228881836 9.776000022888184,2 9.5,2 C9.5,2 7,2 7,2 C4.238999843597412,2 2,4.238999843597412 2,7 C2,7 2,9.5 2,9.5 C2,9.776000022888184 1.7760000228881836,10 1.5,10 C1.5,10 -6,10 -6,10 C-8.208999633789062,10 -10,8.208999633789062 -10,6 C-10,6 -10,-6 -10,-6 C-10,-8.208999633789062 -8.208999633789062,-10 -6,-10z M9.659000396728516,4 C9.692000389099121,4 9.71399974822998,4.033999919891357 9.699999809265137,4.064000129699707 C9.555000305175781,4.36299991607666 9.359999656677246,4.639999866485596 9.121000289916992,4.879000186920166 C9.121000289916992,4.879000186920166 4.879000186920166,9.121000289916992 4.879000186920166,9.121000289916992 C4.639999866485596,9.359999656677246 4.36299991607666,9.555000305175781 4.064000129699707,9.699999809265137 C4.033999919891357,9.71399974822998 4,9.692000389099121 4,9.659000396728516 C4,9.659000396728516 4,9.17199993133545 4,9.17199993133545 C4,9.17199993133545 4,7 4,7 C4,5.3429999351501465 5.3429999351501465,4 7,4 C7,4 9.17199993133545,4 9.17199993133545,4 C9.17199993133545,4 9.659000396728516,4 9.659000396728516,4z M-5.5,-2 C-4.671999931335449,-2 -4,-2.671999931335449 -4,-3.5 C-4,-4.328000068664551 -4.671999931335449,-5 -5.5,-5 C-6.328000068664551,-5 -7,-4.328000068664551 -7,-3.5 C-7,-2.671999931335449 -6.328000068664551,-2 -5.5,-2z M7,-3.5 C7,-4.328000068664551 6.328000068664551,-5 5.5,-5 C4.671999931335449,-5 4,-4.328000068664551 4,-3.5 C4,-2.671999931335449 4.671999931335449,-2 5.5,-2 C6.328000068664551,-2 7,-2.671999931335449 7,-3.5z M-2.9110000133514404,-0.5559999942779541 C-3.2179999351501465,-1.0149999856948853 -3.8399999141693115,-1.1380000114440918 -4.298999786376953,-0.8309999704360962 C-4.757999897003174,-0.5239999890327454 -4.880000114440918,0.09700000286102295 -4.572999954223633,0.5559999942779541 C-3.5880000591278076,2.0269999504089355 -1.9079999923706055,3 0,3 C1.9079999923706055,3 3.5880000591278076,2.0269999504089355 4.572999954223633,0.5559999942779541 C4.880000114440918,0.09700000286102295 4.756999969482422,-0.5239999890327454 4.297999858856201,-0.8309999704360962 C3.8389999866485596,-1.1380000114440918 3.2179999351501465,-1.0149999856948853 2.9110000133514404,-0.5559999942779541 C2.2809998989105225,0.38499999046325684 1.2120000123977661,1 0,1 C-1.2120000123977661,1 -2.2809998989105225,0.38499999046325684 -2.9110000133514404,-0.5559999942779541z"></path></g></g><g mask="url(#__lottie_element_989_2)" style="display: block;"><g transform="matrix(25,0,0,25,300,300)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill="rgb(199,200,206)" fill-opacity="1" d=" M-6,-10 C-6,-10 6,-10 6,-10 C8.208999633789062,-10 10,-8.208999633789062 10,-6 C10,-6 10,1.5 10,1.5 C10,1.7760000228881836 9.776000022888184,2 9.5,2 C9.5,2 7,2 7,2 C4.238999843597412,2 2,4.238999843597412 2,7 C2,7 2,9.5 2,9.5 C2,9.776000022888184 1.7760000228881836,10 1.5,10 C1.5,10 -6,10 -6,10 C-8.208999633789062,10 -10,8.208999633789062 -10,6 C-10,6 -10,-6 -10,-6 C-10,-8.208999633789062 -8.208999633789062,-10 -6,-10z M9.659000396728516,4 C9.692000389099121,4 9.71399974822998,4.033999919891357 9.699999809265137,4.064000129699707 C9.555000305175781,4.36299991607666 9.359999656677246,4.639999866485596 9.121000289916992,4.879000186920166 C9.121000289916992,4.879000186920166 4.879000186920166,9.121000289916992 4.879000186920166,9.121000289916992 C4.639999866485596,9.359999656677246 4.36299991607666,9.555000305175781 4.064000129699707,9.699999809265137 C4.033999919891357,9.71399974822998 4,9.692000389099121 4,9.659000396728516 C4,9.659000396728516 4,9.17199993133545 4,9.17199993133545 C4,9.17199993133545 4,7 4,7 C4,5.3429999351501465 5.3429999351501465,4 7,4 C7,4 9.17199993133545,4 9.17199993133545,4 C9.17199993133545,4 9.659000396728516,4 9.659000396728516,4z"></path></g></g></g></g></g></svg>
+      </div>
+      <div class="text-bar-emojis flex">
+        <svg viewBox="0 0 36 36" width="24" height="24"><path class="moyai2" fill="#4f5b62" d="M8 27s-2 4-2 6 4 3 12 3 12-1 12-3-2-6-2-6H8zM9 6C6 6 6 7 5 16c-.994 8.945 0 10 4 10 2 0 2-20 0-20zm18 0c3 0 3 1 4 10 .994 8.945 0 10-4 10-2 0-2-20 0-20z"/><path fill="rgb(199,200,206)" class="moyai" d="M8 3s1-3 10-3 10 3 10 3 1 6 1 14-1 14-1 14-1 2-10 2-10-2-10-2-1-3-1-14S8 3 8 3z"/><path fill="#66757F" d="M28 8c0-1-3-4-10-4S8 7 8 8c0 .807 4.548 1.612 6.311 1.894C14.999 12.548 15 18 15 18c.805-3.218.315-7.079.093-8.467C15.295 8.942 15.941 8 18 8c3 0 3 2 3 2h.002c-.234 1.657-.566 5.089.162 8 0 0 .002-5.491.697-8.134C23.727 9.562 28 8.782 28 8z"/><path fill="#66757F" d="M14 20c0-1 2-3 4-3s4 2 4 3-1 1-4 1-4 0-4-1zm-2 4s2-2 6-2 6 2 6 2-2-1-6-1-6 1-6 1zm0 2c0-1 2-2 6-2s6 1 6 2-1 1-6 1-6 0-6-1z"/></svg>
+      </div>
+    </div>
+
+    <div class="text-bar-activities flex">
+      <svg viewBox="0 0 96 96" width="96" height="96" style="width: 24px; height: 24px; content-visibility: visible;"><defs><clipPath><rect width="96" height="96" x="0" y="0"></rect></clipPath><clipPath><path d="M0,0 L96,0 L96,96 L0,96z"></path></clipPath></defs><g><g transform="matrix(2.700000047683716,0,0,2.700000047683716,-79.60000610351562,-81.35110473632812)" opacity="1" style="display: block;"><g transform="matrix(1,0,0,1,32.02199935913086,32.64699935913086)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,7.179999828338623,7.181000232696533)"><path fill="rgb(199,200,206)" fill-opacity="1" d=" M-6.554999828338623,1.6410000324249268 C-6.929999828338623,3.0420000553131104 -6.099999904632568,4.480999946594238 -4.698999881744385,4.85699987411499 C-4.698999881744385,4.85699987411499 1.6410000324249268,6.554999828338623 1.6410000324249268,6.554999828338623 C3.0409998893737793,6.931000232696533 4.48199987411499,6.098999977111816 4.85699987411499,4.698999881744385 C4.85699987411499,4.698999881744385 6.554999828338623,-1.6410000324249268 6.554999828338623,-1.6410000324249268 C6.929999828338623,-3.0420000553131104 6.098999977111816,-4.480999946594238 4.698999881744385,-4.85699987411499 C4.698999881744385,-4.85699987411499 -1.6410000324249268,-6.556000232696533 -1.6410000324249268,-6.556000232696533 C-3.0409998893737793,-6.931000232696533 -4.48199987411499,-6.099999904632568 -4.85699987411499,-4.698999881744385 C-4.85699987411499,-4.698999881744385 -6.554999828338623,1.6410000324249268 -6.554999828338623,1.6410000324249268z"></path></g></g><g transform="matrix(1,0,0,1,47.44300079345703,32.41899871826172)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,7.802000045776367,7.021999835968018)"><path fill="rgb(199,200,206)" fill-opacity="1" d=" M-6.478000164031982,2.4040000438690186 C-7.552000045776367,4.372000217437744 -6.126999855041504,6.771999835968018 -3.884999990463257,6.771999835968018 C-3.884999990463257,6.771999835968018 3.885999917984009,6.771999835968018 3.885999917984009,6.771999835968018 C6.127999782562256,6.771999835968018 7.552000045776367,4.372000217437744 6.479000091552734,2.4040000438690186 C6.479000091552734,2.4040000438690186 2.5929999351501465,-4.718999862670898 2.5929999351501465,-4.718999862670898 C1.4739999771118164,-6.771999835968018 -1.4730000495910645,-6.771999835968018 -2.5929999351501465,-4.718999862670898 C-2.5929999351501465,-4.718999862670898 -6.478000164031982,2.4040000438690186 -6.478000164031982,2.4040000438690186z"></path></g></g><g transform="matrix(1,0,0,1,32.119998931884766,49.04499816894531)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,7.081999778747559,7.046999931335449)"><path fill="rgb(199,200,206)" fill-opacity="1" d=" M-0.9409999847412109,-6.26800012588501 C-0.42100000381469727,-6.796999931335449 0.41999998688697815,-6.796999931335449 0.9409999847412109,-6.26800012588501 C0.9409999847412109,-6.26800012588501 2.056999921798706,-5.132999897003174 2.056999921798706,-5.132999897003174 C2.2699999809265137,-4.916999816894531 2.5480000972747803,-4.78000020980835 2.8459999561309814,-4.744999885559082 C2.8459999561309814,-4.744999885559082 4.4120001792907715,-4.561999797821045 4.4120001792907715,-4.561999797821045 C5.140999794006348,-4.4770002365112305 5.665999889373779,-3.805999994277954 5.585000038146973,-3.061000108718872 C5.585000038146973,-3.061000108718872 5.410999774932861,-1.4630000591278076 5.410999774932861,-1.4630000591278076 C5.377999782562256,-1.1579999923706055 5.447000026702881,-0.8510000109672546 5.605999946594238,-0.5910000205039978 C5.605999946594238,-0.5910000205039978 6.441999912261963,0.7720000147819519 6.441999912261963,0.7720000147819519 C6.831999778747559,1.406999945640564 6.644999980926514,2.24399995803833 6.0229997634887695,2.6440000534057617 C6.0229997634887695,2.6440000534057617 4.690999984741211,3.502000093460083 4.690999984741211,3.502000093460083 C4.436999797821045,3.6649999618530273 4.24399995803833,3.9119999408721924 4.144000053405762,4.201000213623047 C4.144000053405762,4.201000213623047 3.621000051498413,5.7179999351501465 3.621000051498413,5.7179999351501465 C3.378000020980835,6.423999786376953 2.619999885559082,6.796999931335449 1.9259999990463257,6.551000118255615 C1.9259999990463257,6.551000118255615 0.43799999356269836,6.021999835968018 0.43799999356269836,6.021999835968018 C0.15399999916553497,5.921999931335449 -0.1550000011920929,5.921999931335449 -0.43799999356269836,6.021999835968018 C-0.43799999356269836,6.021999835968018 -1.9270000457763672,6.551000118255615 -1.9270000457763672,6.551000118255615 C-2.619999885559082,6.796999931335449 -3.378000020980835,6.423999786376953 -3.621999979019165,5.7179999351501465 C-3.621999979019165,5.7179999351501465 -4.144999980926514,4.201000213623047 -4.144999980926514,4.201000213623047 C-4.24399995803833,3.9119999408721924 -4.436999797821045,3.6649999618530273 -4.690999984741211,3.502000093460083 C-4.690999984741211,3.502000093460083 -6.02400016784668,2.6440000534057617 -6.02400016784668,2.6440000534057617 C-6.644999980926514,2.24399995803833 -6.831999778747559,1.406999945640564 -6.442999839782715,0.7720000147819519 C-6.442999839782715,0.7720000147819519 -5.605999946594238,-0.5910000205039978 -5.605999946594238,-0.5910000205039978 C-5.447000026702881,-0.8510000109672546 -5.377999782562256,-1.1579999923706055 -5.4120001792907715,-1.4630000591278076 C-5.4120001792907715,-1.4630000591278076 -5.585000038146973,-3.061000108718872 -5.585000038146973,-3.061000108718872 C-5.665999889373779,-3.805999994277954 -5.142000198364258,-4.4770002365112305 -4.4120001792907715,-4.561999797821045 C-4.4120001792907715,-4.561999797821045 -2.8469998836517334,-4.744999885559082 -2.8469998836517334,-4.744999885559082 C-2.5480000972747803,-4.78000020980835 -2.2699999809265137,-4.916999816894531 -2.056999921798706,-5.132999897003174 C-2.056999921798706,-5.132999897003174 -0.9409999847412109,-6.26800012588501 -0.9409999847412109,-6.26800012588501z"></path></g></g><g transform="matrix(-1,0,0,-1,62.694000244140625,63.31999969482422)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,7.247000217437744,7.247000217437744)"><path fill="rgb(199,200,206)" fill-opacity="1" d=" M1.5130000114440918,-5.5920000076293945 C0.9929999709129333,-6.997000217437744 -0.9940000176429749,-6.997000217437744 -1.5140000581741333,-5.5920000076293945 C-1.5140000581741333,-5.5920000076293945 -2.190999984741211,-3.760999917984009 -2.190999984741211,-3.760999917984009 C-2.4600000381469727,-3.0339999198913574 -3.0339999198913574,-2.4600000381469727 -3.76200008392334,-2.190999984741211 C-3.76200008392334,-2.190999984741211 -5.5920000076293945,-1.5130000114440918 -5.5920000076293945,-1.5130000114440918 C-6.997000217437744,-0.9940000176429749 -6.997000217437744,0.9929999709129333 -5.5920000076293945,1.5130000114440918 C-5.5920000076293945,1.5130000114440918 -3.76200008392334,2.190999984741211 -3.76200008392334,2.190999984741211 C-3.0339999198913574,2.4600000381469727 -2.4600000381469727,3.0339999198913574 -2.190999984741211,3.760999917984009 C-2.190999984741211,3.760999917984009 -1.5140000581741333,5.5920000076293945 -1.5140000581741333,5.5920000076293945 C-0.9940000176429749,6.997000217437744 0.9929999709129333,6.997000217437744 1.5130000114440918,5.5920000076293945 C1.5130000114440918,5.5920000076293945 2.190000057220459,3.760999917984009 2.190000057220459,3.760999917984009 C2.4600000381469727,3.0339999198913574 3.0329999923706055,2.4600000381469727 3.760999917984009,2.190999984741211 C3.760999917984009,2.190999984741211 5.5920000076293945,1.5130000114440918 5.5920000076293945,1.5130000114440918 C6.997000217437744,0.9929999709129333 6.997000217437744,-0.9940000176429749 5.5920000076293945,-1.5130000114440918 C5.5920000076293945,-1.5130000114440918 3.760999917984009,-2.190999984741211 3.760999917984009,-2.190999984741211 C3.0329999923706055,-2.4600000381469727 2.4600000381469727,-3.0339999198913574 2.190000057220459,-3.760999917984009 C2.190000057220459,-3.760999917984009 1.5130000114440918,-5.5920000076293945 1.5130000114440918,-5.5920000076293945z"></path></g></g></g></g></svg>
+    </div>
+  </div>
+
+<!-- Chat Bar -->
+  <div class="chat-bar">
+    <div class="dm-start">
+      <div class="user-pfp"></div>
+      <div class="user-name">Rīper</div>
+      <div class="user-username">meleoidas</div>
+      <div class="dm-beginning">This is the beginning of your direct message history with <strong>Rīper</strong>.</div>
+      <div class="dm-mutual flex">
+        <div class="dm-mutual-server"></div>
+        <div class="dm-mutual-text">1 Mutual Server</div>
+        <div class="dm-mutual-dot"></div>
+        <div class="dm-add-friend">Add Friend</div>
+        <div class="dm-block">Block</div>
+        <div class="dm-spam">Report Spam</div>
+      </div>
+    </div>
+
+    <div class="messages">
+
+      <div class="date flex">
+        <div class="date-line1"></div>
+        <div class="date-text">30 February 2025</div>
+        <div class="date-line2"></div>
+      </div>
+
+      <div class="msg flex">
+        <div class="user-pfp"></div>
+        <div class="content">
+          <div class="msg-top flex">
+            <div class="user-username">Rīper</div>
+            <div class="time">Today at 25:00</div>
+          </div>
+          <div class="msg1">https://www.youtube.com/watch?v=dQw4w9WgXcQ</div>
+          <div class="embed">
+            <div class="embed-color"></div>
+            <div class="embed-content">
+              <div class="embed-source">Youtube</div>
+              <div class="embed-channel">Rick Astley</div>
+              <div class="embed-title">Rick Astley - Never Gonna Give You Up (Official Music Video)</div>
+              <div class="embed-thumbnail">
+                <div class="embed-buttons">
+                  <div class="embed-play"></div>
+                  <div class="embed-open"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="height: 26px;"></div> <!-- 30px -->
+    </div>
+    
+  </div>
+
+</body>
+</html>

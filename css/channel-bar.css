@@ -1,0 +1,137 @@
+.channel-bar{
+  position: fixed;
+  flex-direction: column;
+  
+  width: 240px;
+  height: 100%;
+
+  color: rgb(148.05,154.97,164.06);
+  background-color: rgb(42.92,44.9,48.87);
+
+  left: 71px;
+  top: 0;
+}
+.channel-bar:hover{
+  z-index: 1;
+}
+.channel-top-bar{
+  border-bottom: 1px rgb(29.87,30.87,33.88) solid;  
+  box-shadow: 0 2px rgba(29.87,30.87,33.88, .25);
+}
+
+.anon{
+  margin-top: auto;
+  height: 52px;
+  width: 100%;
+  background-color: rgb(35.01,36,39.99);
+}
+
+.anon-pfp-and-info{
+  width: 120px;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding-left: 1px;
+  cursor: pointer;
+  clip-path: inset(0 round 5px);
+}
+.anon-pfp-and-info:hover, .mute-button:hover, .deafen-button:hover, .cogwheel-button:hover{
+  background-color: #323439;
+  color: rgba(255,254.99,254.98, 0.75);
+}
+
+.anon-pfp{
+  position: relative;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+
+  background-image: url(../media/user\ 2\ pfp.png);
+  background-size: 100%;
+  margin-right: 8px;
+
+  transform: translateY(-2px);
+}
+.anon-pfp *{
+  position: absolute;
+}
+.anon .user-status .user-status-1{
+  background-color: rgb(35.01,36,39.99);
+}
+
+.anon-info{
+  padding: 4px 0;
+  height: 31px;
+  line-height: 15px;
+}
+.anon-name{
+  color: rgba(255,254.99,254.98, 1);
+  font-size: 14px;
+  font-family: "gg sans SemiBold", var(--font-family);
+  padding-top: 1px;
+}
+.anon-status{
+  font-size: 12px;
+  font-family: "gg sans Normal", var(--font-family);
+  color: rgb(181.02,185.99,192.98);
+}
+
+.mute-button, .deafen-button, .cogwheel-button{
+  justify-content: center;
+  position: relative;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.mute-button svg{ 
+  fill: rgb(181.02,185.99,192.98);
+}
+
+.anon-button-popup{
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  white-space: nowrap;
+
+  transform: scale(0);
+  opacity: 0;
+  transition: 50ms transform, 50ms opacity;
+  pointer-events: none;
+}
+
+.anon-rectangle{
+  color: rgb(219.01,221.97,224.96);
+  background-color: rgba(22, 23, 26, 1);
+  clip-path: inset(0 round 5px);
+  font-size: 13px;
+  padding: 7px 10px;
+  transform-origin: center bottom;
+}
+
+.anon-triangle{
+  transform: translateY(-3px);
+  border-top: 8px solid rgb(22, 23, 26);
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+
+.mute-button:hover .anon-button-popup,
+.deafen-button:hover .anon-button-popup,
+.cogwheel-button:hover .anon-button-popup{
+  transform: scale(1);
+  opacity: 1;
+}
+
+.mute-button .anon-button-popup{
+  top: -115%;
+  left: -161%; 
+}
+.deafen-button .anon-button-popup{
+  top: -115%;
+  left: -42%; 
+}
+.cogwheel-button .anon-button-popup{
+  top: -115%;
+  left: -99%;
+}

@@ -1,0 +1,197 @@
+strong{
+  letter-spacing: 0.33px;
+}
+
+.chat-bar{
+  position: fixed;
+
+  top: 48.8px;
+  bottom: 68px;
+  left: 311px;
+  right: 340px;
+  display: flex;
+  flex-direction: column-reverse;
+  overflow-y: auto
+
+}
+
+.dm-start{
+  width: 828px;
+  height: 246px;
+  margin: 16px;
+  margin-bottom: 24px;
+  padding-left: 1px;
+  order: 1;
+}
+.chat-bar .user-pfp{
+  position: relative;
+  height: 80px;
+  width: 80px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+.chat-bar .user-name{
+  font-size: 32px;
+  font-family: "gg sans", var(--font-family);
+  font-weight: 700;
+  color: rgb(219.01,221.97,224.96);
+  line-height: 1.25;
+  margin-bottom: 7px;
+}
+.chat-bar .user-username{
+  font-family: var(--font-family);
+  font-size: 24px;
+  color: rgb(219.01,221.97,224.96);
+  margin-bottom: 18px;
+}
+.chat-bar .dm-beginning{
+  font-family: "gg sans Normal", var(--font-family);
+  color: rgb(181.02,185.99,192.98);
+  margin-bottom: 16px;
+}
+.dm-mutual-server{
+  background-image: url(../media/server\ 2\ icon.jpg);
+  background-size: 100%;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.dm-mutual-text{
+  font-family: "gg sans Normal", var(--font-family);
+  color: rgb(181.02,185.99,192.98);
+  font-size: 14px;
+  margin-right: 16px;
+}
+
+.dm-mutual-dot{
+  border-radius: 50%;
+  background-color: rgb(65,66.99,73.99);
+  height: 4px;
+  width: 4px;
+  margin-top: 1px;
+  margin-right: 16px;
+}
+
+.dm-add-friend{
+  font-family: "gg sans Medium", var(--font-family);
+  font-size: 14px;
+
+  padding: 2.5px 16px 1.5px 16px;
+  background-color: rgb(88, 101, 242);
+  clip-path: inset(0 round 3px);
+  height: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: 200ms background-color;
+}
+.dm-add-friend:hover{
+  background-color: rgb(71, 82, 196);
+}
+.dm-add-friend:active{
+  background-color: rgb(60, 69, 165);
+}
+
+.dm-block{
+  font-family: "gg sans Medium", var(--font-family);
+  font-size: 14px; 
+
+  padding: 2.5px 16px 1.5px 16px;
+  background-color: rgb(78, 80, 88);
+  clip-path: inset(0 round 3px);
+  height: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: 200ms background-color;
+}
+.dm-block:hover{
+  background-color: rgb(109, 111, 120);
+}
+.dm-block:active{
+  background-color: rgb(128, 132, 142);
+}
+
+.dm-spam{
+  font-family: "gg sans Medium", var(--font-family);
+  font-size: 14px; 
+
+  padding: 2.5px 16px 1.5px 16px;
+  background-color: rgb(218, 55, 60);
+  clip-path: inset(0 round 3px);
+  height: 20px;
+  cursor: pointer;
+  transition: 200ms background-color;
+}
+.dm-spam:hover{
+  background-color: rgb(161, 40, 41);
+}
+.dm-spam:active{
+  background-color: rgb(143, 32, 34);
+}
+
+.date{
+  justify-content: center;
+  white-space: nowrap;
+  font-family: "gg sans SemiBold", var(--font-family);
+  color: rgb(148.01,154.98,163.99);
+  font-size: 12px;
+  text-align: center;
+  margin: -8px 16px 8px 0px;
+}
+.date-line1{
+  height: 0.5px;
+  width: 100%;
+  background-color: rgba(78, 80, 88, 0.48);
+  margin-left: 16px;
+  margin-right: 6px;
+}
+.date-line2{
+  height: 0.5px;
+  width: 100%;
+  background-color: rgba(78, 80, 88, 0.48);
+  margin-left: 6px;
+  margin-right: 16px;
+}
+
+.msg{
+  padding: 2px 48px 2px 72px;
+  position: relative;
+}
+.msg .user-pfp{
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 17px;
+  top: 6px;
+}
+.msg .user-username{
+  font-size: 16px;
+  font-family: "gg sans Medium", var(--font-family);
+  color: rgb(242.01,242.96,244.96);
+  margin: 0;
+  padding-bottom: 1px;
+}
+.msg .time{
+  font-size: 12px;
+  font-family: "gg sans Normal", var(--font-family);
+  color: rgb(148.01,154.98,163.99);
+  margin-left: 8px;
+  padding-top: 4px;
+}
+.msg1{
+  font-size: 16px;
+  font-family: "gg sans Normal", var(--font-family);
+  color: rgb(0,170,252);
+}
+.content{
+  padding-left: 1px;
+  padding-top: 2px;
+}
+
+.embed{
+  display: flex;
+  height: 371px;
+  width: 432px;
+  background-color: rgb(43,44.99,48.99);
+  clip-path: inset(0 round 8px);
+}

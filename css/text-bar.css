@@ -1,0 +1,84 @@
+.text-bar{
+  position: fixed;
+  justify-content: center;
+  align-items: start;
+  left: 311px;
+  right: 340px;
+  bottom: 0;
+  height: 68px;
+  padding: 0 16px;
+  gap: 8px;
+  background-color: rgb(49.01,51,56.04);
+}
+
+.text-bar-input{
+  justify-content: center;
+  height: 44px;
+  background-color: rgb(56,57.99,63.99);
+  border-radius: 8px;
+  padding: 0px 14px 0px 16px;
+  flex: 1;
+}
+
+.text-bar-activities{
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  background-color: rgb(56,57.99,63.99);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.text-bar-activities:hover *{
+  fill: rgba(255,254.99,254.98, 1);
+}
+
+.text-bar-text, .text-bar-gift, .text-bar-gifs, .text-bar-stickers, .text-bar-emojis{
+  justify-content: center;
+  padding-right: 16px;
+  cursor: pointer;
+}
+.text-bar-attach{
+  justify-content: center;
+  padding-right: 14px;
+  cursor: pointer;
+}
+.text-bar-attach:hover path, .text-bar-gift:hover path, .text-bar-gifs:hover path, .text-bar-stickers:hover path{
+  fill: rgba(255,254.99,254.98, 1);
+}
+
+.text-bar-text{
+  justify-content: center;
+  flex: 1;
+}
+.text-bar-text input{
+  background-color: transparent;
+  border: 0;
+  font-family: "gg sans Normal", var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  width: 100%;
+  transform: translateY(-1px);
+
+  color: rgb(219.01,221.97,224.96);
+  border: none;
+  outline: none;
+}
+.text-bar-input input::placeholder{
+  font-family: "gg sans Normal", var(--font-family);
+  color: rgb(109,110.98,119.99);
+}
+
+.text-bar-emojis{
+  padding: 0;
+  transition: transform 75ms;
+}
+
+.text-bar-emojis:hover{
+  transform: scale(1.15);
+}
+.text-bar-emojis:hover .moyai{
+  fill: #CCD6DD;
+}
+.text-bar-emojis:hover .moyai2{
+  fill: #66757F;
+}
